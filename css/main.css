@@ -240,7 +240,8 @@ header {
 .section-background,
 .section-problem,
 .section-research,
-.section-results {
+.section-results,
+.section-takeaways {
   margin-bottom: 2rem;
 }
 
