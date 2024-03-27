@@ -4,18 +4,18 @@ body, html{
     margin: 0;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-h1, h2{
+h1{
   .cormorant-garamond-regular {
   font-family: "Cormorant Garamond", serif;
   font-weight: 800;
+  font-style: normal;
+}
+}
+
+h2{
+  .nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
   font-style: normal;
 }
 }
@@ -47,16 +47,27 @@ a{
   font-size: 1rem;
   cursor: pointer;
 }
+
+
+header {
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.logo-name{
+  width: 15rem;
+}
+
 /* Nav styling */
 .nav-container {
+  margin-top: 0rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 1rem;
   gap: 2rem;
- position: sticky;
- top: 0;
- z-index: 1000;
 }
 
 .nav-link {
@@ -77,6 +88,36 @@ a{
   font-weight: bold;
   color: #035D5D;
 }
+
+/* Home Banner styling */
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -3rem;
+}
+
+.banner {
+    width: 80%;
+    height: 30rem;
+}
+
+/* Home Bio styling */
+.home-bio {
+    text-align: left;
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.7;
+
+}
+
+.home-bio h2 {
+  font-weight: 100;
+    color: #333333;
+    font-size: 2.8rem;
+}
+
 
 /* Button styling */
 .button-container {
@@ -141,6 +182,7 @@ a{
    display: flex;
   max-width: 80%;
   margin: auto;
+  margin-top: 3rem;
   padding: 1rem;
 }
 
@@ -178,6 +220,11 @@ a{
 
 
 /*Work Page styling*/
+.custom-video{
+  max-width: 50rem;
+  width: 100%;
+  border: 1px solid #333;
+}
 .page-title {
   font-size: 2rem;
   color: teal;
@@ -233,4 +280,67 @@ h1.question-title {
   box-sizing: border-box;
   margin-bottom: inherit;
   margin-top: 2rem;
+}
+
+/*Case Study homepage styling*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 10vh;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    flex-basis: 40%;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100%;
+    display: block;
+}
+
+.card-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover .card-text {
+    background-color: #035D5D;
+    cursor: pointer;
+}
+
+.card:hover .card-text, .card:hover .card-text h2, .card:hover .card-text p {
+    color: white;
+    cursor: pointer;
+}
+
+.card-text h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+.card-text p {
+    margin: 0.5rem 0;
 }
