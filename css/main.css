@@ -74,6 +74,18 @@ header {
     margin-bottom: 1rem; 
   }
 }
+
+/* github link */
+#githubProfile {
+  color:black;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s; 
+}
+
+#githubProfile:hover {
+  color: rgba(3, 93, 93, 0.7); /* Changes color when hovered */
+  transform: scale(1.1); /* Slightly enlarges the link */
+}
 /* Nav styling */
 .nav-container {
   margin-top: 0rem;
